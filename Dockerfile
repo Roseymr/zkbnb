@@ -10,7 +10,7 @@ ENV GO111MODULE=on
 RUN cd /zkbnb && make build-only
 
 # Pull ZkBNB into a second stage deploy alpine container
-FROM alpine:3.16.0
+FROM alpine:3.21.0
 
 ARG USER=bsc
 ARG USER_UID=1000
